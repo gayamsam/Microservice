@@ -36,7 +36,7 @@ public class CitizenController {
 	
 	@PostMapping(path ="/add")
 	public ResponseEntity<Citizen> addCitizen(@RequestBody Citizen newCitizen) {
-		
+		// This change is for git Commit tesing. from Venkat branch to sampurna branch....... 
 		Citizen citizen = repo.save(newCitizen);
 		return new ResponseEntity<>(citizen, HttpStatus.OK);
 	}
